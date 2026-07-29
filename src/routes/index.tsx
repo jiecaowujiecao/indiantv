@@ -1,8 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { t, type TKey } from "@/lib/i18n";
-import { APK_DOWNLOAD_URL, APP_INFO, SITE_URL } from "@/config";
+import { APK_DOWNLOAD_URL, APP_INFO, SITE_URL, LOGO_URL } from "@/config";
 import { series, sports, games, korean, news, night, adult, priv, finance, type Card } from "@/lib/movies-data";
-import logoAsset from "@/assets/netcinema-logo.png.asset.json";
 import { triggerDownload } from "@/lib/fb-pixel";
 
 export const Route = createFileRoute("/")({
@@ -17,16 +16,16 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "NETPLAYA — Live and free entertainment" },
       { property: "og:description", content: "Download the NETPLAYA APK. Sports, movies, serials and news in HD/4K, 100% free." },
       { property: "og:url", content: SITE_URL },
-      { property: "og:image", content: logoAsset.url },
+      { property: "og:image", content: LOGO_URL },
       { name: "twitter:title", content: "NETPLAYA — Live and free entertainment" },
       { name: "twitter:description", content: "Download the NETPLAYA APK. Sports, movies, serials and news in HD/4K, 100% free." },
-      { name: "twitter:image", content: logoAsset.url },
+      { name: "twitter:image", content: LOGO_URL },
     ],
     links: [
       { rel: "canonical", href: SITE_URL },
-      { rel: "icon", type: "image/png", href: logoAsset.url },
-      { rel: "apple-touch-icon", href: logoAsset.url },
-      { rel: "preload", as: "image", href: logoAsset.url, fetchpriority: "high" },
+      { rel: "icon", type: "image/webp", href: LOGO_URL },
+      { rel: "apple-touch-icon", href: LOGO_URL },
+      { rel: "preload", as: "image", href: LOGO_URL, fetchpriority: "high" },
       { rel: "preconnect", href: "https://jk2.anrtv.top" },
       { rel: "dns-prefetch", href: "https://jk2.anrtv.top" },
     ],
@@ -85,7 +84,7 @@ function TopBar({ tr, apkUrl }: { tr: (k: TKey) => string; apkUrl: string }) {
     <header className="top-bar">
       <div className="top-bar-inner">
         <a href={apkUrl} onClick={(e) => { e.preventDefault(); triggerDownload(apkUrl); }} className="top-logo" aria-label="NETPLAYA" download>
-          <img src={logoAsset.url} alt="NETPLAYA" width={32} height={32} className="top-logo-img" fetchPriority="high" decoding="async" />
+          <img src={LOGO_URL} alt="NETPLAYA" width={32} height={32} className="top-logo-img" fetchPriority="high" decoding="async" />
           <span className="top-logo-text">NETPLAYA</span>
         </a>
         <div className="top-actions">

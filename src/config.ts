@@ -25,3 +25,7 @@ export const APP_INFO = {
   platform: "Android 11+",
   downloads: "500,000+",
 };
+
+/** Site logo image URL. */
+export const LOGO_URL =
+  "https://res.cloudinary.com/vdkjvj76/image/upload/v1785316273/ChatGPT_Image_2026%E5%B9%B47%E6%9C%8813%E6%97%A5_16_29_40_im5r9d.webp";
