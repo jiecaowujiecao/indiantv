@@ -5,7 +5,7 @@
 //
 // Browser pixel + server CAPI share the same `eventID` so Meta deduplicates.
 
-export const FB_PIXEL_ID = "1051934957414454";
+export const FB_PIXEL_ID = "888436793890475";
 
 declare global {
   interface Window {

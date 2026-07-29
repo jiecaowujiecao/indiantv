@@ -101,7 +101,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   errorComponent: ErrorComponent,
 });
 
-const FB_PIXEL_ID = "1051934957414454";
+const FB_PIXEL_ID = "888436793890475";
 // Defer the Meta Pixel until after the page is interactive so it never
 // competes with the initial render / first paint. `fbevents.js` (~70KB) is
 // requested lazily via requestIdleCallback (fallback: 2s timeout).
