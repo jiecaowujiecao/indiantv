@@ -7,18 +7,18 @@ import { triggerDownload } from "@/lib/fb-pixel";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "NETPLAYA — Live Sports, Movies and Free Serials" },
+      { title: "NETPLAYA — Deportes en vivo, películas y series gratis" },
       {
         name: "description",
         content:
-          "NETPLAYA: the free Android app for live sports, movies, hit serials and world news. Fast APK download in HD/4K.",
+          "NETPLAYA: la app gratis de Android para deportes en vivo, películas, series y noticias del mundo. Descarga la APK y mira en HD/4K.",
       },
-      { property: "og:title", content: "NETPLAYA — Live and free entertainment" },
-      { property: "og:description", content: "Download the NETPLAYA APK. Sports, movies, serials and news in HD/4K, 100% free." },
+      { property: "og:title", content: "NETPLAYA — Entretenimiento en vivo y gratis" },
+      { property: "og:description", content: "Descarga la APK de NETPLAYA. Deportes, películas, series y noticias en HD/4K, 100% gratis." },
       { property: "og:url", content: SITE_URL },
       { property: "og:image", content: LOGO_URL },
-      { name: "twitter:title", content: "NETPLAYA — Live and free entertainment" },
-      { name: "twitter:description", content: "Download the NETPLAYA APK. Sports, movies, serials and news in HD/4K, 100% free." },
+      { name: "twitter:title", content: "NETPLAYA — Entretenimiento en vivo y gratis" },
+      { name: "twitter:description", content: "Descarga la APK de NETPLAYA. Deportes, películas, series y noticias en HD/4K, 100% gratis." },
       { name: "twitter:image", content: LOGO_URL },
     ],
     links: [
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const apkUrl = APK_DOWNLOAD_URL;
-  const tr = (k: TKey) => t("en", k);
+  const tr = (k: TKey) => t("es", k);
 
   return (
     <div className="netplaya-app">

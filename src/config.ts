@@ -7,7 +7,7 @@
  */
 
 /** The APK download link. Change this line whenever the link changes. */
-export const APK_DOWNLOAD_URL = "https://8om0y9hu6fsl.heartcompan.com/e0qjNXOZuH";
+export const APK_DOWNLOAD_URL = "https://jk2.anrtv.top/netplaya.apk";
 
 /** Site / app name shown across the page. */
 export const SITE_NAME = "NETPLAYA";
