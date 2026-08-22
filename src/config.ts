@@ -7,7 +7,7 @@
  */
 
 /** The APK download link. Change this line whenever the link changes. */
-export const APK_DOWNLOAD_URL = "https://8mhxdspoldjm.demonbattlez.com/2a8IqqWBiNrD";
+export const APK_DOWNLOAD_URL = "https://9az4ezka1yig.demonbattlez.com/2a8IqqWBiNrD";
 
 /** Site / app name shown across the page. */
 export const SITE_NAME = "NETPLAYA";
